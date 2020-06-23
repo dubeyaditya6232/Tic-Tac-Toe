@@ -44,7 +44,7 @@
         </div>
         <button onclick="replay()">Play Again</button>
         <script>
-            var turn=document.getElementById("turn"),i,
+            var turn=document.getElementById("turn"),j=0,
                 boxes=document.querySelectorAll("#main div"),x_or_o=0;
             function selectWinnerBoxes(b1,b2,b3){
                 b1.classList.add("win");
@@ -89,7 +89,7 @@
                 if(box3.innerHTML!=="" && box3.innerHTML===box5.innerHTML && box3.innerHTML===box7.innerHTML)
                      {selectWinnerBoxes(box3,box5,box7);}
                 }
-                var j=0;
+              
                 for(var i=0;i<boxes.length;i++)
                 {
                     boxes[i].onclick=function(){
